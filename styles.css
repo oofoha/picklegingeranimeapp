@@ -9,7 +9,9 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    /*background-color: #f4f4f4;*/
+    background: linear-gradient(to bottom, #FF00FF, #FFFF00); /* Gradient from fuchsia to yellow vertically */
+
 }
 
 header {
