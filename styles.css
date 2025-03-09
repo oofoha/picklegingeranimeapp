@@ -66,3 +66,76 @@ footer {
     margin-top: 20px;
 }
 
+/* For screens up to 600px (mobile) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px; /* Adjust font size for small screens */
+    }
+
+    nav ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation links vertically */
+        margin: 10px 0;
+    }
+
+    input[type="email"] {
+        width: 80%; /* Make input field take up more width */
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 80%; /* Make the button take up more width */
+    }
+
+    main {
+        padding: 1em;
+    }
+}
+/* For screens up to 768px (tablets) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul li {
+        display: inline-block; /* Display navigation items in a row, but with some spacing */
+        margin: 10px;
+    }
+
+    input[type="email"] {
+        width: 70%; /* Make the input field take up more width */
+    }
+
+    button {
+        width: 70%;
+    }
+
+    main {
+        padding: 1.5em;
+    }
+}
+/* For screens over 1200px (desktops) */
+@media (min-width: 1200px) {
+    body {
+        margin: 0 auto;
+        width: 80%; /* Center the content */
+    }
+
+    header h1 {
+        font-size: 36px; /* Larger font size for desktop */
+    }
+
+    input[type="email"] {
+        width: 50%;
+    }
+
+    button {
+        width: 50%;
+    }
+}
+
+
