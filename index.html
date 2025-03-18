@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Pickle Ginger Anime Adviser</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
@@ -24,17 +24,60 @@
     </header>
 
     <main>
+        
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Find the Perfect Anime for Your Next Movie Night!</h1>
+        <button id="get-started">Let’s Find You an Anime!</button>
+    </section>
+        
+    <!-- Interactive Quiz Teaser -->
+    <section class="quiz-teaser">
+        <h2>Not Sure Where to Start?</h2>
+        <p>Take our quick quiz and we’ll recommend an anime for you!</p>
+        <button id="quiz-button">Take the Quiz</button>
+    </section>
+
+    <!-- Genre-Based Browsing -->
+    <section class="genres">
+        <h2>Explore by Genre</h2>
+        <div class="genre-list">
+            <div class="genre-card" data-genre="action">Action</div>
+            <div class="genre-card" data-genre="comedy">Comedy</div>
+            <div class="genre-card" data-genre="fantasy">Fantasy</div>
+            <div class="genre-card" data-genre="family">Family-Friendly</div>
+        </div>
+    </section>
+
+    <!-- Family-Friendly Tagging System -->
+    <section class="family-friendly">
+        <h2>Looking for Something Safe for the Kids?</h2>
+        <p>We tag every anime to help you find the best family-friendly options.</p>
+        <img src="images/family-friendly-icon.png" alt="Family-Friendly Icon">
+    </section>
+
+    <!-- Social Sharing -->
+    <section class="social-sharing">
+        <h2>Share Your Pick with Friends</h2>
+        <button id="share-button">Share Your Recommendation</button>
+    </section>
+
+    <!-- Subscribe -->
+    <section class="subscribe">
         <h2>Subscribe to Our Newsletter</h2>
         <form id="newsletter-form">
             <input type="email" id="email" placeholder="Enter your email" required>
             <button type="submit">Subscribe</button>
         </form>
         <div id="response-message"></div>
+    </section>
+        
     </main>
 
 <script src="footer.js"></script>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
+    
 </body>
 </html>
 
