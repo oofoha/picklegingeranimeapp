@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     /*background-color: #f4f4f4;*/
     background: linear-gradient(to bottom, #FF00FF, #FFFF00); /* Gradient from fuchsia to yellow vertically */
@@ -47,6 +47,83 @@ main {
     padding: 2em;
 }
 
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #ff66b2, #ffcc00);
+    padding: 80px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+button {
+    background: #ff4081;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff1a66;
+}
+
+/* Quiz Section */
+.quiz-teaser {
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 60%;
+}
+
+/* Genre Section */
+.genre-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.genre-card {
+    background: #ff66b2;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 120px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.genre-card:hover {
+    background: #ff4081;
+}
+
+/* Family-Friendly Section */
+.family-friendly {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    width: 60%;
+}
+
+.family-friendly img {
+    width: 80px;
+}
+
+/* Social Sharing */
+.social-share {
+    margin: 50px 0;
+}
+
 form {
     text-align: center;
     margin: 20px 0;
@@ -58,10 +135,6 @@ input[type="email"] {
     margin-right: 10px;
 }
 
-button {
-    padding: 10px 20px;
-    cursor: pointer;
-}
 
 img {
     max-width: 100%;
