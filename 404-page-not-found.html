@@ -1,37 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found | Pickle Ginger Anime Adviser</title>
+  <meta name="description" content="The page you were looking for could not be found.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>404 Page Not Found</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact-us.html">Contact US</a></li>
-            </ul>
-        </nav>
-    </header>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <main>
-        <p>Sorry, the page you were looking for is not here. Seeing this page means one of the following:</br>
-      <ul>
-        <li>There was an error in the URL entered into your web browser. Please check the URL and try one more time.</li>
-        <li>The page you were looking for has been removed.</li>
-      </ul></br> 
-      No worries though. A great place to check is our homepage which you can go to by clicking <a href="index.html">here</a>. 
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Pickle Ginger Anime Adviser — Home">
+        <span class="logo-icon" aria-hidden="true">🥒</span>
+        <span class="logo-text">Pickle Ginger</span>
+      </a>
+
+      <button class="nav-toggle"
+              aria-expanded="false"
+              aria-controls="main-nav"
+              aria-label="Open navigation menu"
+              type="button">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="tropes.html">Tropes</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <div class="container">
+      <div class="error-page">
+        <p class="error-code" aria-hidden="true">404</p>
+        <h1>Page Not Found</h1>
+        <p>
+          Sorry, the page you were looking for doesn't exist. The URL may be incorrect or the
+          page may have been moved or removed.
         </p>
-    </main>
-<footer>
-<script src="footer.js"></script>
-</footer>
-    
+        <a href="index.html" class="btn btn-primary">Back to Home</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Pickle Ginger — Home">
+            <span class="logo-icon" aria-hidden="true">🥒</span>
+            <span class="logo-text">Pickle Ginger</span>
+          </a>
+          <p>Your companion for personalized anime recommendations, perfect for families and anime enthusiasts alike.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer site links">
+          <h3>Pages</h3>
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="tropes.html">Anime Tropes</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav" aria-label="Footer legal links">
+          <h3>Legal</h3>
+          <ul role="list">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 OffTerra, LLC. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://medium.com/@picklegingerapp" aria-label="Find us on Medium" rel="noopener noreferrer" target="_blank">Medium</a>
+          <a href="https://x.com/PickleGingerApp" aria-label="Find us on Twitter" rel="noopener noreferrer" target="_blank">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const body = document.body;
+    navToggle.addEventListener('click', function () {
+      const isOpen = body.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+      navToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    });
+    document.querySelectorAll('#main-nav a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        body.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-label', 'Open navigation menu');
+      });
+    });
+  </script>
+
 </body>
 </html>
