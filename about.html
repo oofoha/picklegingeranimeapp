@@ -1,51 +1,170 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Pickle Ginger Anime Adviser</title>
+  <meta name="description" content="Meet the team behind Pickle Ginger Anime Adviser — a passion project built to help families and friends discover great anime together.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>Meet The Team</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact-us.html">Contact US</a></li>
-            </ul>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Pickle Ginger Anime Adviser — Home">
+        <span class="logo-icon" aria-hidden="true">🥒</span>
+        <span class="logo-text">Pickle Ginger</span>
+      </a>
+
+      <button class="nav-toggle"
+              aria-expanded="false"
+              aria-controls="main-nav"
+              aria-label="Open navigation menu"
+              type="button">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="tropes.html">Tropes</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="container">
+        <h1 id="page-heading">Meet The Team</h1>
+        <p>The people behind your next favorite anime recommendation</p>
+      </div>
+    </section>
+
+    <section class="content-section" aria-label="About Pickle Ginger">
+      <div class="container">
+
+        <article class="content-card">
+          <h2>Our Story</h2>
+          <p>We created the Pickle Ginger App because we love anime.</p>
+          <p>
+            We also love gathering with family and friends to enjoy watching anime together. For us,
+            watching TV together with our parents, siblings, cousins, and friends are some of our
+            favorite memories from childhood — actually, teenage-hood.
+          </p>
+          <p>
+            Things have changed since we were kids and accessing anime is easier than ever, but
+            watching together isn't as easy. That's what inspired us to create Pickle Ginger: to
+            help more people enjoy anime together.
+          </p>
+        </article>
+
+        <article class="content-card" aria-labelledby="app-heading">
+          <h2 id="app-heading">The App</h2>
+          <h3>Your App For Personalized Anime Recommendations</h3>
+          <p>
+            Discover the ultimate companion for family movie nights with the Pickle Ginger Anime
+            Adviser app. Designed for individuals and families alike, this app delivers personalized
+            anime recommendations tailored to your viewing preferences.
+          </p>
+          <p>
+            With an intuitive interface, users can enter their preferences to quickly find anime —
+            from action-packed adventures to heartwarming slice-of-life series.
+          </p>
+          <p>
+            Say goodbye to endless scrolling and let Pickle Ginger Anime Adviser guide you to your
+            next favorite anime.
+          </p>
+
+          <h3>The Perks</h3>
+          <p>The Pickle Ginger App includes:</p>
+          <ul role="list">
+            <li>A database with over 150+ anime series</li>
+            <li>Anime recommendations tailored for families</li>
+            <li>Updates based on community feedback</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Pickle Ginger — Home">
+            <span class="logo-icon" aria-hidden="true">🥒</span>
+            <span class="logo-text">Pickle Ginger</span>
+          </a>
+          <p>Your companion for personalized anime recommendations, perfect for families and anime enthusiasts alike.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer site links">
+          <h3>Pages</h3>
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="tropes.html">Anime Tropes</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+          </ul>
         </nav>
-    </header>
 
-    <main>
-        <h2>Our Story</h2>
-        <p>We created the Pickle Ginger App because we like anime.</p></br>
-        <p>We also love gathering with family and friends to enjoy watching anime together. For us, watching tv together with our parents, siblings, cousins, and friends are some of our favorite memories from childhood (actually, teenage-hood).</p></br>
-        <p>Things have changed since we were kids and we know accessing anime is easier, but watching together isn’t as easy. That's what inspired us to create Pickle Ginger: to help more people enjoy anime together.</p>
-        <h2>The App</h2>
-        <h3>Your App For Personalized Anime Recommendations</h3>
-        <p>Discover the ultimate companion for family movie nights with the Pickle Ginger Anime Adviser app. Designed for individuals and families alike, this app delivers personalized anime recommendations tailored to your viewing preferences.</p></br>
-        <p>With an intuitive interface, users can enter their preferences to quickly find anime —from action-packed adventures to heartwarming slice-of-life series.</p></br>
-        <p>Say goodbye to endless scrolling and let Pickle Ginger Anime Adviser App guide you to your next favorite anime.</p>
-        <h3>The Perks</h3>
-        <p>The Pickle Ginger App includes</p>
-        <p>
-            <ul>
-                <li>a database with over 150+ anime series</li>
-                <li>anime recommendations tailored for families</li>
-                <li>updates based on community feedback</li>
-            </ul>
-        </p>
-    </main>
+        <nav class="footer-nav" aria-label="Footer legal links">
+          <h3>Legal</h3>
+          <ul role="list">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </nav>
+      </div>
 
-<footer>
-<script src="footer.js"></script>
-</footer>
+      <div class="footer-bottom">
+        <p>&copy; 2025 OffTerra, LLC. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://medium.com/@picklegingerapp"
+             aria-label="Find us on Medium"
+             rel="noopener noreferrer"
+             target="_blank">Medium</a>
+          <a href="https://x.com/PickleGingerApp"
+             aria-label="Find us on Twitter"
+             rel="noopener noreferrer"
+             target="_blank">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const body = document.body;
+    navToggle.addEventListener('click', function () {
+      const isOpen = body.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+      navToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    });
+    document.querySelectorAll('#main-nav a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        body.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-label', 'Open navigation menu');
+      });
+    });
+  </script>
 
 </body>
 </html>
-
