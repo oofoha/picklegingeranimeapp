@@ -1,4 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Pickle Ginger Anime Adviser</title>
+  <meta name="description" content="Get in touch with the Pickle Ginger team. We'd love to hear your feedback, anime suggestions, or collaboration ideas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-devteam@pickleginger.app
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-We’d love to hear from you! Your feedback, ideas, and questions are important to us. Whether you have a suggestion for a new feature, a favorite anime to recommend, or want to share your thoughts on our app, please reach out! We're also eager to connect with you at anime conventions and cultural festivals. If you're interested in collaboration, let us know. Together, we can celebrate the vibrant world of anime and create unforgettable experiences!
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Pickle Ginger Anime Adviser — Home">
+        <span class="logo-icon" aria-hidden="true">🥒</span>
+        <span class="logo-text">Pickle Ginger</span>
+      </a>
+
+      <button class="nav-toggle"
+              aria-expanded="false"
+              aria-controls="main-nav"
+              aria-label="Open navigation menu"
+              type="button">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="tropes.html">Tropes</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact-us.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="container">
+        <h1 id="page-heading">Contact Us</h1>
+        <p>We'd love to hear from you — your feedback drives what we build</p>
+      </div>
+    </section>
+
+    <section class="content-section" aria-label="Contact information and form">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h2>Get In Touch</h2>
+            <p>
+              Your feedback, ideas, and questions are important to us. Whether you have a suggestion
+              for a new feature, a favorite anime to recommend, or want to share your thoughts on our
+              app, please reach out!
+            </p>
+            <p>
+              We're also eager to connect at anime conventions and cultural festivals. If you're
+              interested in collaboration, let us know. Together, we can celebrate the vibrant world
+              of anime and create unforgettable experiences!
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <span class="contact-detail-icon" aria-hidden="true">✉️</span>
+                <span>
+                  Email us at
+                  <a href="mailto:devteam@pickleginger.app">devteam@pickleginger.app</a>
+                </span>
+              </div>
+              <div class="contact-detail-item">
+                <span class="contact-detail-icon" aria-hidden="true">🐦</span>
+                <span>
+                  Follow us on
+                  <a href="https://x.com/PickleGingerApp" rel="noopener noreferrer" target="_blank">Twitter / X</a>
+                </span>
+              </div>
+              <div class="contact-detail-item">
+                <span class="contact-detail-icon" aria-hidden="true">📝</span>
+                <span>
+                  Read our blog on
+                  <a href="https://medium.com/@picklegingerapp" rel="noopener noreferrer" target="_blank">Medium</a>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card">
+            <h2>Send a Message</h2>
+            <form id="contact-form" novalidate aria-label="Contact form">
+              <div class="form-field">
+                <label for="contact-name">Your Name <span aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  placeholder="Jane Smith"
+                  aria-required="true"
+                  autocomplete="name"
+                >
+              </div>
+
+              <div class="form-field">
+                <label for="contact-email">Email Address <span aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  placeholder="jane@example.com"
+                  aria-required="true"
+                  autocomplete="email"
+                >
+              </div>
+
+              <div class="form-field">
+                <label for="contact-subject">Subject</label>
+                <input
+                  type="text"
+                  id="contact-subject"
+                  name="subject"
+                  placeholder="Anime recommendation, feature idea, etc."
+                >
+              </div>
+
+              <div class="form-field">
+                <label for="contact-message">Message <span aria-hidden="true">*</span></label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  placeholder="Tell us what's on your mind…"
+                  aria-required="true"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;">
+                Send Message
+              </button>
+              <p id="contact-response" class="form-message" role="status" aria-live="polite" style="margin-top: 0.75rem;"></p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Pickle Ginger — Home">
+            <span class="logo-icon" aria-hidden="true">🥒</span>
+            <span class="logo-text">Pickle Ginger</span>
+          </a>
+          <p>Your companion for personalized anime recommendations, perfect for families and anime enthusiasts alike.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer site links">
+          <h3>Pages</h3>
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="tropes.html">Anime Tropes</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav" aria-label="Footer legal links">
+          <h3>Legal</h3>
+          <ul role="list">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 OffTerra, LLC. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://medium.com/@picklegingerapp" aria-label="Find us on Medium" rel="noopener noreferrer" target="_blank">Medium</a>
+          <a href="https://x.com/PickleGingerApp" aria-label="Find us on Twitter" rel="noopener noreferrer" target="_blank">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav
+    const navToggle = document.querySelector('.nav-toggle');
+    const body = document.body;
+    navToggle.addEventListener('click', function () {
+      const isOpen = body.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+      navToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    });
+    document.querySelectorAll('#main-nav a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        body.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-label', 'Open navigation menu');
+      });
+    });
+
+    // Contact form — basic client-side feedback
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name    = document.getElementById('contact-name').value.trim();
+      const email   = document.getElementById('contact-email').value.trim();
+      const message = document.getElementById('contact-message').value.trim();
+      const resp    = document.getElementById('contact-response');
+
+      if (!name || !email || !message) {
+        resp.textContent = 'Please fill in all required fields.';
+        resp.className = 'form-message error';
+        return;
+      }
+      resp.textContent = 'Thanks for reaching out! We\'ll get back to you soon.';
+      resp.className = 'form-message';
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>

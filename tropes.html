@@ -1,63 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pickle Ginger Anime Adviser</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-    <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
-    <link rel="icon" href="favicon-16x16.png" type="image/png" sizes="16x16">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Tropes | Pickle Ginger Anime Adviser</title>
+  <meta name="description" content="Learn about common anime tropes and what they mean — from Magical Girl Transformations to Mech battles.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="favicon-16x16.png" type="image/png" sizes="16x16">
 </head>
 <body>
 
-    <header>
-        <h1>Anime Tropes</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Meet The Team</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <main>
-        
-    <!-- Interactive Quiz Teaser -->
-    <section class="quiz-teaser">
-        
-        <h2>Here are some common anime tropes and what they mean</h2>
-        <h3>Magical Girl Transformation</h3>
-        <p>The anime features magical transformations from ordinary person to person with superpowers or enhanced abilities. The transformation sequence usually involves at least one character going through an outfit change which summons a costume onto the person when they were not carrying one and is repeated throughout the series, possibly occurring in each episode.</p>
-        <h3>Harem or Reverse Harem</h3>
-        <p>The anime features one male main character who somehow finds himself as the target of affection of more than two characters. A reverse harem refers to a female main character being the target of affection of more than two characters. The main character may or may not be aware that they are the love interest of anyone. This dynamic appears early in the series and may drive the plot in a number of episodes.</p>
-        <h3>Middle or High School Drama</h3>
-        <p>The anime follows the main character as they go through the school year. This may be noted by cherry blossoms falling on the first day of the new school year, school assemblies, student festivals, and summer break plans. Attendance of school and student life are a main feature of the series.</p>
-        <h3>Mechs</h3>
-        <p>The anime features at least one giant robot, called a mech, which is piloted by a human. The main character of the series is usually a pilot and there may be more than one mech in existence in the series. Mechs usually appear to fight and will appear multiple times throughout the series if not in each episode.</p>
-        <button id="quiz-button">Take the Quiz</button>
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Pickle Ginger Anime Adviser — Home">
+        <span class="logo-icon" aria-hidden="true">🥒</span>
+        <span class="logo-text">Pickle Ginger</span>
+      </a>
+
+      <button class="nav-toggle"
+              aria-expanded="false"
+              aria-controls="main-nav"
+              aria-label="Open navigation menu"
+              type="button">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="tropes.html" aria-current="page">Tropes</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="container">
+        <h1 id="page-heading">Anime Tropes</h1>
+        <p>Common storytelling patterns you'll find across anime series</p>
+      </div>
     </section>
 
-    <!-- Genre-Based Browsing -->
-    <section class="genres">
-        <h2>Explore by Genre</h2>
-        <div class="genre-list">
-            <div class="genre-card" data-genre="action">Action</div>
-            <div class="genre-card" data-genre="comedy">Comedy</div>
-            <div class="genre-card" data-genre="fantasy">Fantasy</div>
-            <div class="genre-card" data-genre="family">Family-Friendly</div>
+    <section class="content-section" aria-label="Anime trope descriptions">
+      <div class="container">
+
+        <!-- Tropes -->
+        <article class="trope-card" aria-labelledby="trope-magical-girl">
+          <h3 id="trope-magical-girl">✨ Magical Girl Transformation</h3>
+          <p>
+            The anime features magical transformations from ordinary person to person with superpowers
+            or enhanced abilities. The transformation sequence usually involves at least one character
+            going through an outfit change which summons a costume — and is repeated throughout the
+            series, possibly in each episode.
+          </p>
+        </article>
+
+        <article class="trope-card" aria-labelledby="trope-harem">
+          <h3 id="trope-harem">💕 Harem or Reverse Harem</h3>
+          <p>
+            The anime features one male main character who finds himself as the target of affection
+            of more than two characters. A reverse harem refers to a female main character in the
+            same situation. The main character may or may not be aware they are anyone's love
+            interest, and this dynamic often drives the plot throughout the series.
+          </p>
+        </article>
+
+        <article class="trope-card" aria-labelledby="trope-school">
+          <h3 id="trope-school">🏫 Middle or High School Drama</h3>
+          <p>
+            The anime follows the main character through the school year. You'll often spot cherry
+            blossoms on the first day of term, school assemblies, student festivals, and summer break
+            plans. Attendance and student life are central features of the series.
+          </p>
+        </article>
+
+        <article class="trope-card" aria-labelledby="trope-mechs">
+          <h3 id="trope-mechs">🤖 Mechs</h3>
+          <p>
+            The anime features at least one giant robot — called a mech — which is piloted by a
+            human. The main character is usually a pilot, and there may be more than one mech in
+            existence. Mechs typically appear in battle sequences and show up multiple times
+            throughout the series.
+          </p>
+        </article>
+
+        <!-- Quiz teaser -->
+        <div class="quiz-card" style="margin-top: 2rem;">
+          <div class="quiz-content">
+            <span class="section-badge">Find Your Match</span>
+            <h2>Curious Which Tropes You Love?</h2>
+            <p>Take our quick quiz to discover anime that matches your favorite storytelling styles and themes.</p>
+            <button id="quiz-button" class="btn btn-primary" type="button">Take the Quiz</button>
+          </div>
+          <div class="quiz-visual" aria-hidden="true">
+            <div class="quiz-decoration">
+              <span class="deco-circle deco-1">?</span>
+              <span class="deco-circle deco-2">anime</span>
+              <span class="deco-circle deco-3">🎌</span>
+            </div>
+          </div>
         </div>
+
+        <!-- Genre browsing -->
+        <section class="genres" style="margin-top: 3rem;" aria-labelledby="genres-heading">
+          <div class="section-header">
+            <h2 id="genres-heading">Explore by Genre</h2>
+            <p>See which tropes appear most in your favorite genres</p>
+          </div>
+          <div class="genre-grid" role="list">
+            <div class="genre-card" role="listitem" data-genre="action" tabindex="0" aria-label="Explore Action anime">
+              <span class="genre-icon" aria-hidden="true">⚡</span>
+              <span class="genre-name">Action</span>
+            </div>
+            <div class="genre-card" role="listitem" data-genre="comedy" tabindex="0" aria-label="Explore Comedy anime">
+              <span class="genre-icon" aria-hidden="true">😄</span>
+              <span class="genre-name">Comedy</span>
+            </div>
+            <div class="genre-card" role="listitem" data-genre="fantasy" tabindex="0" aria-label="Explore Fantasy anime">
+              <span class="genre-icon" aria-hidden="true">✨</span>
+              <span class="genre-name">Fantasy</span>
+            </div>
+            <div class="genre-card" role="listitem" data-genre="family" tabindex="0" aria-label="Explore Family-Friendly anime">
+              <span class="genre-icon" aria-hidden="true">👨‍👩‍👧</span>
+              <span class="genre-name">Family</span>
+            </div>
+            <div class="genre-card" role="listitem" data-genre="romance" tabindex="0" aria-label="Explore Romance anime">
+              <span class="genre-icon" aria-hidden="true">💝</span>
+              <span class="genre-name">Romance</span>
+            </div>
+            <div class="genre-card" role="listitem" data-genre="adventure" tabindex="0" aria-label="Explore Adventure anime">
+              <span class="genre-icon" aria-hidden="true">🗺️</span>
+              <span class="genre-name">Adventure</span>
+            </div>
+          </div>
+        </section>
+
+      </div>
     </section>
-        
-    </main>
-    
-<script src="footer.js"></script>
-    
-<script src="script.js"></script>
-    
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Pickle Ginger — Home">
+            <span class="logo-icon" aria-hidden="true">🥒</span>
+            <span class="logo-text">Pickle Ginger</span>
+          </a>
+          <p>Your companion for personalized anime recommendations, perfect for families and anime enthusiasts alike.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer site links">
+          <h3>Pages</h3>
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="tropes.html">Anime Tropes</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav" aria-label="Footer legal links">
+          <h3>Legal</h3>
+          <ul role="list">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 OffTerra, LLC. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://medium.com/@picklegingerapp" aria-label="Find us on Medium" rel="noopener noreferrer" target="_blank">Medium</a>
+          <a href="https://x.com/PickleGingerApp" aria-label="Find us on Twitter" rel="noopener noreferrer" target="_blank">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const body = document.body;
+    navToggle.addEventListener('click', function () {
+      const isOpen = body.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+      navToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    });
+    document.querySelectorAll('#main-nav a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        body.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-label', 'Open navigation menu');
+      });
+    });
+  </script>
+
 </body>
 </html>
-
-

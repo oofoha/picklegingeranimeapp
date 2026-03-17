@@ -1,42 +1,64 @@
 
-
 // Handle the quiz button click
-document.getElementById('quiz-button').addEventListener('click', function() {
-    alert("Quiz coming soon! Stay tuned.");
-});
+const quizButton = document.getElementById('quiz-button');
+if (quizButton) {
+    quizButton.addEventListener('click', function() {
+        alert("Quiz coming soon! Stay tuned.");
+    });
+}
 
 // Handle genre selection
 document.querySelectorAll('.genre-card').forEach(card => {
     card.addEventListener('click', function() {
         alert(`You selected the ${this.dataset.genre} genre!`);
     });
+    // Keyboard accessibility: trigger on Enter/Space
+    card.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            alert(`You selected the ${this.dataset.genre} genre!`);
+        }
+    });
 });
 
 // Handle social sharing
-document.getElementById('share-button').addEventListener('click', function() {
-    if (navigator.share) {
-        navigator.share({
-            title: 'Pickle Ginger Anime Adviser',
-            text: 'I just found an anime recommendation using Pickle Ginger!',
-            url: window.location.href
-        }).catch(err => console.log('Error sharing:', err));
-    } else {
-        alert("Sharing not supported in this browser.");
-    }
-});
+const shareButton = document.getElementById('share-button');
+if (shareButton) {
+    shareButton.addEventListener('click', function() {
+        if (navigator.share) {
+            navigator.share({
+                title: 'Pickle Ginger Anime Adviser',
+                text: 'I just found an anime recommendation using Pickle Ginger!',
+                url: window.location.href
+            }).catch(err => console.log('Error sharing:', err));
+        } else {
+            alert("Sharing not supported in this browser.");
+        }
+    });
+}
 
 // Handle newsletter subscription
-document.getElementById('newsletter-form').addEventListener('submit', function (e) {
-    e.preventDefault(); // Prevent the default form submission
+const newsletterForm = document.getElementById('newsletter-form');
+if (newsletterForm) {
+    newsletterForm.addEventListener('submit', function (e) {
+        e.preventDefault();
 
-    let email = document.getElementById('email').value;
+        const emailInput = document.getElementById('email');
+        const responseMsg = document.getElementById('response-message');
+        const email = emailInput ? emailInput.value.trim() : '';
 
-    if (email) {
-        // Simulating a successful form submission
-        document.getElementById('response-message').innerHTML = "Thank you for subscribing!";
-        document.getElementById('email').value = ""; // Clear the input field
-    } else {
-        document.getElementById('response-message').innerHTML = "Please enter a valid email!";
-    }
-});
+        if (email) {
+            if (responseMsg) {
+                responseMsg.textContent = "Thank you for subscribing!";
+                responseMsg.className = 'form-message';
+            }
+            if (emailInput) emailInput.value = '';
+        } else {
+            if (responseMsg) {
+                responseMsg.textContent = "Please enter a valid email address.";
+                responseMsg.className = 'form-message error';
+            }
+        }
+    });
+}
 

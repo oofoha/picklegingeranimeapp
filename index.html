@@ -1,1 +1,327 @@
-<footer id="footer"></footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pickle Ginger Anime Adviser | Find Your Next Favorite Anime</title>
+  <meta name="description" content="Discover personalized anime recommendations for the whole family with Pickle Ginger Anime Adviser. 150+ series, curated for all ages.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="favicon-16x16.png" type="image/png" sizes="16x16">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ── Header ── -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Pickle Ginger Anime Adviser — Home">
+        <span class="logo-icon" aria-hidden="true">🥒</span>
+        <span class="logo-text">Pickle Ginger</span>
+      </a>
+
+      <button class="nav-toggle"
+              aria-expanded="false"
+              aria-controls="main-nav"
+              aria-label="Open navigation menu"
+              type="button">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul role="list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="tropes.html">Tropes</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Main Content ── -->
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-eyebrow">Your Anime Journey Starts Here</span>
+          <h1 id="hero-heading">
+            Discover Anime Your <span class="text-gradient">Whole Family</span> Will Love
+          </h1>
+          <p class="hero-description">
+            Personalized anime recommendations tailored to your preferences — from action-packed
+            adventures to heartwarming slice-of-life series.
+          </p>
+          <div class="hero-cta">
+            <a href="#quiz" class="btn btn-primary">Find My Anime</a>
+            <a href="about.html" class="btn btn-ghost">Learn More</a>
+          </div>
+          <div class="hero-stats" aria-label="App highlights">
+            <div class="stat">
+              <span class="stat-number">150+</span>
+              <span class="stat-label">Anime Series</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat-number">Family</span>
+              <span class="stat-label">Friendly Options</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat-number">Free</span>
+              <span class="stat-label">To Use</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card-stack">
+            <div class="anime-preview-card card-3">
+              <span class="card-genre">Fantasy</span>
+            </div>
+            <div class="anime-preview-card card-2">
+              <span class="card-genre">Action</span>
+            </div>
+            <div class="anime-preview-card card-1">
+              <span class="card-genre">Family</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Genre Browsing -->
+    <section class="genres section" aria-labelledby="genres-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="genres-heading">Explore by Genre</h2>
+          <p>Find anime that matches your mood and interests</p>
+        </div>
+        <div class="genre-grid" role="list">
+          <div class="genre-card" role="listitem" data-genre="action" tabindex="0" aria-label="Explore Action anime">
+            <span class="genre-icon" aria-hidden="true">⚡</span>
+            <span class="genre-name">Action</span>
+          </div>
+          <div class="genre-card" role="listitem" data-genre="comedy" tabindex="0" aria-label="Explore Comedy anime">
+            <span class="genre-icon" aria-hidden="true">😄</span>
+            <span class="genre-name">Comedy</span>
+          </div>
+          <div class="genre-card" role="listitem" data-genre="fantasy" tabindex="0" aria-label="Explore Fantasy anime">
+            <span class="genre-icon" aria-hidden="true">✨</span>
+            <span class="genre-name">Fantasy</span>
+          </div>
+          <div class="genre-card" role="listitem" data-genre="family" tabindex="0" aria-label="Explore Family-Friendly anime">
+            <span class="genre-icon" aria-hidden="true">👨‍👩‍👧</span>
+            <span class="genre-name">Family</span>
+          </div>
+          <div class="genre-card" role="listitem" data-genre="romance" tabindex="0" aria-label="Explore Romance anime">
+            <span class="genre-icon" aria-hidden="true">💝</span>
+            <span class="genre-name">Romance</span>
+          </div>
+          <div class="genre-card" role="listitem" data-genre="adventure" tabindex="0" aria-label="Explore Adventure anime">
+            <span class="genre-icon" aria-hidden="true">🗺️</span>
+            <span class="genre-name">Adventure</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz Teaser -->
+    <section id="quiz" class="quiz-teaser section" aria-labelledby="quiz-heading">
+      <div class="container">
+        <div class="quiz-card">
+          <div class="quiz-content">
+            <span class="section-badge">Personalized For You</span>
+            <h2 id="quiz-heading">Not Sure Where to Start?</h2>
+            <p>
+              Take our quick quiz to get personalized anime recommendations based on your
+              preferences, mood, and what you enjoy watching.
+            </p>
+            <ul class="quiz-features" role="list">
+              <li>Takes only 2 minutes</li>
+              <li>Personalized to your tastes</li>
+              <li>Family-friendly options available</li>
+            </ul>
+            <button id="quiz-button" class="btn btn-primary" type="button">
+              Take the Quiz
+            </button>
+          </div>
+
+          <div class="quiz-visual" aria-hidden="true">
+            <div class="quiz-decoration">
+              <span class="deco-circle deco-1">?</span>
+              <span class="deco-circle deco-2">anime</span>
+              <span class="deco-circle deco-3">🎌</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Family Friendly -->
+    <section class="family-section section" aria-labelledby="family-heading">
+      <div class="container">
+        <div class="family-grid">
+          <div class="family-content">
+            <span class="section-badge">For Everyone</span>
+            <h2 id="family-heading">Family-Friendly Picks</h2>
+            <p>
+              We believe anime is for everyone. Our curated family-friendly selections are perfect
+              for movie nights with loved ones — safe for all ages and guaranteed fun for the
+              whole family.
+            </p>
+            <div class="feature-list">
+              <div class="feature-item">
+                <span class="feature-icon" aria-hidden="true">✅</span>
+                <span>Age-appropriate content ratings</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon" aria-hidden="true">✅</span>
+                <span>Curated by our team of anime enthusiasts</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon" aria-hidden="true">✅</span>
+                <span>Updated based on community feedback</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="family-visual" aria-hidden="true">
+            <div class="family-badge">
+              <span class="badge-icon">👨‍👩‍👧‍👦</span>
+              <span class="badge-text">Family Approved</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter & Social -->
+    <section class="newsletter-section section" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <div class="newsletter-card">
+          <h2 id="newsletter-heading">Stay in the Loop</h2>
+          <p>Get the latest anime recommendations and app updates delivered to your inbox.</p>
+
+          <form id="newsletter-form" class="newsletter-form" novalidate aria-label="Newsletter subscription">
+            <div class="form-group">
+              <label for="email" class="visually-hidden">Email address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                aria-required="true"
+                autocomplete="email"
+              >
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+            <p id="response-message" class="form-message" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="social-links">
+            <p>Follow us on:</p>
+            <div class="social-buttons">
+              <a href="https://medium.com/@picklegingerapp"
+                 class="btn btn-social"
+                 aria-label="Follow us on Medium"
+                 rel="noopener noreferrer"
+                 target="_blank">
+                M&nbsp; Medium
+              </a>
+              <a href="https://x.com/PickleGingerApp"
+                 class="btn btn-social"
+                 aria-label="Follow us on Twitter / X"
+                 rel="noopener noreferrer"
+                 target="_blank">
+                𝕏&nbsp; Twitter
+              </a>
+              <button id="share-button" class="btn btn-social" type="button">
+                🔗 Share
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer" id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Pickle Ginger — Home">
+            <span class="logo-icon" aria-hidden="true">🥒</span>
+            <span class="logo-text">Pickle Ginger</span>
+          </a>
+          <p>Your companion for personalized anime recommendations, perfect for families and anime enthusiasts alike.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer site links">
+          <h3>Pages</h3>
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="tropes.html">Anime Tropes</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav" aria-label="Footer legal links">
+          <h3>Legal</h3>
+          <ul role="list">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 OffTerra, LLC. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://medium.com/@picklegingerapp"
+             aria-label="Find us on Medium"
+             rel="noopener noreferrer"
+             target="_blank">Medium</a>
+          <a href="https://x.com/PickleGingerApp"
+             aria-label="Find us on Twitter"
+             rel="noopener noreferrer"
+             target="_blank">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Mobile navigation toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const body = document.body;
+    navToggle.addEventListener('click', function () {
+      const isOpen = body.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+      navToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    });
+    // Close nav when a link is clicked
+    document.querySelectorAll('#main-nav a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        body.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-label', 'Open navigation menu');
+      });
+    });
+  </script>
+
+</body>
+</html>
